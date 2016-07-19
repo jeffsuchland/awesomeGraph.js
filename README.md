@@ -54,3 +54,18 @@ When you want your graph to be created and displayed in the page
 	awesomeGraph.start(true);
 ```
 
+## Interacting With Your Graph
+
+There are a few functions created to interact with a graph created with awesomeGraph.js
+awesomeGraph.start()
+```
+awesomeGraph.start([true,false]); // true/false is in regards to whether you want animations for this graph or not.
+```
+awesomeGraph.clear()
+```
+awesomeGraph.clear(); // Removes the graph from the page you created it on. Simply deletes the elements from the container.
+```
+
+## Graph Sizing
+
+Due to the incorporation of text in the graph (and keeping the legends readable) I would suggest keeping the graph's container element larger than ~250px in height and larger than 600px in width. However depending on the length of your titles and legend entries it may require more or less space.
