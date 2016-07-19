@@ -206,22 +206,25 @@ awesomeGraph.makeGraph = function (data, id) {
 	}
 	this.clear = function () {
 		ele.innerHTML = "";
-		//clear event handlers / animations as well when they are added
+		//clears graph elements
 	}
+	this.start = function (anims) {
+		this.determineType(anims);
+	}
+	// PLACEHOLDERS FOR LATER FUNCTIONS
 	this.restart = function () {
 		this.clear();
 	}
 	this.refresh = function () {
 		this.clear();
 	}
-	this.start = function (anims) {
-		this.determineType(anims);
-	}
+	
 	this.startAnims = function () {
 		this.addAnimations();
 		// Start animations here
 	}
 	this.startNoAnims = function () {
 		This.start(anims);		
+	
 	}
 }
